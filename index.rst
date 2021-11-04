@@ -10,6 +10,10 @@ Common Ground Referentie implementatie Den Haag
    :maxdepth: 2
 
    designsystem.rst
+   zgw.rst
+   gzac.rst
+   portal.rst
+   bff.rst
 
 Deze site omschrijft de den haag implementatie van de common ground stack. Deze bestaat uit een aantal onderdelen. Deze site is bedoeld om het gebruik van en samenhang tussen de verschillende componenten toe te lichten.
 
@@ -19,5 +23,5 @@ Deze site omschrijft de den haag implementatie van de common ground stack. Deze 
 * :ref:`Portal <portal>`
 * :ref:`BFF <bff>`
 
-Deze implementatie is opgezet door een team van `Ritense <https://www.ritense.com/>`_ , `Maykin Media <https://www.maykinmedia.nl/>`_ en `Den Haag <https://www.denhaag.nl/>`_ .
+Deze implementatie is opgezet door een team van `Ritense <https://www.ritense.com/>`_ , `Maykin Media <https://www.maykinmedia.nl/>`_ en `Den Haag <https://www.denhaag.nl/>`_ 
 
