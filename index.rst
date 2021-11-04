@@ -8,21 +8,16 @@ Common Ground Referentie implementatie Den Haag
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
-Deze readthedocs omschrijft de den haag implementatie van de common ground stack. Deze bestaat uit een aantal onderdelen.
+   designsystem.rst
 
-- NL Design system
-- ZGW Apis
-- GZAC
-- Portal
-- BFF
+Deze site omschrijft de den haag implementatie van de common ground stack. Deze bestaat uit een aantal onderdelen. Deze site is bedoeld om het gebruik van en samenhang tussen de verschillende componenten toe te lichten.
 
-Deze implementatie is gedaan door een team van `Ritense <https://www.ritense.com>`, `Maykin <https://www.maykinmedia/nl>` en `Den Haag<https://www.denhaag.nl>`.
+* :ref:`Design system <design_system>`
+* :ref:`ZGW <zgw>`
+* :ref:`GZAC <gzac>`
+* :ref:`Portal <portal>`
+* :ref:`BFF <bff>`
 
-Indices and tables
-==================
+Deze implementatie is opgezet door een team van `Ritense <https://www.ritense.com/>`_ , `Maykin Media <https://www.maykinmedia.nl/>`_ en `Den Haag <https://www.denhaag.nl/>`_ .
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
