@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Denhaag referentie common ground implementatie'
-copyright = '2021, Peter van Manen'
-author = 'Peter van Manen'
+project = 'Denhaag Common Ground'
+copyright = '2021'
+author = 'Common Ground ZGW team Den Haa'
 
 
 # -- General configuration ---------------------------------------------------
