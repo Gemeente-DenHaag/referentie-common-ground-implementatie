@@ -1,0 +1,4 @@
+# sphinx build folder
+_build
+
+*.bat
