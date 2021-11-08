@@ -1,0 +1,51 @@
+digraph {
+
+layout="dot"
+center="true"
+ 
+
+subgraph cluster_laag5{
+    label="Laag 5"
+    labelloc="t";
+    labeljust="l"
+    "PWA"[shape=rect,width=1]
+    "Filler1"[shape=rect,style=invisible,width=1]
+    "Console"[shape=rect,width=1]
+    "Filler0"[shape=rect,style=invisible,width=1]
+}
+subgraph cluster_laag4{
+    label="Laag 4"
+    labelloc="t";
+    labeljust="l"
+    "BFF"[shape=rect,width=1]
+    "Filler2"[shape=rect,style=invisible,width=1]
+    "GZAC"[shape=rect,width=1]
+    "Filler3"[shape=rect,style=invisible,width=1]
+}
+subgraph cluster_laag2{
+    label="Laag 2"
+    labelloc="t";
+    labeljust="l"
+    "a"[shape=rect,width=1,style=invisible]
+    "ZGW"[shape=rect,width=1]
+    "b"[shape=rect,width=1,style=invisible]
+    "Filler4"[shape=rect,style=invisible,width=1]
+}
+
+subgraph cluster_4{
+    label="Laag 1"
+    labelloc="t";
+    labeljust="l"
+    "c"[shape=rect,width=1,style=invis]
+    "Datalaag"[shape=cylinder,width=1]
+    "d"[shape=rect,width=1,style=invis]
+    "Filler5"[shape=rect,style=invis,width=1]
+}
+
+PWA->BFF[label="JWT"];
+Console->GZAC[label="JWT"];
+GZAC->ZGW[label="JWT"];
+BFF->ZGW[label="JWT"];
+ZGW->Datalaag;
+BFF->b[style=invis]
+}

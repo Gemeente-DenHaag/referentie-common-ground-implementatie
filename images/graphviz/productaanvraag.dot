@@ -9,14 +9,13 @@
             label = "Gebruiker";
             "Gebruiker" -> "Formulier";
             "Formulier" -> "FormulierenApi";
-            "FormulierenApi" -> "ObjectApi";
+            "FormulierenApi" -> "ObjectApi"[label="ProductAanvraag"];
         }
         subgraph cluster_1 {
             label = "Proces";
             "OpenNotificatie"->"GZAC";
-            "GZAC"->"ObjectApi";
+            "GZAC"->"ObjectApi"[dir=both];
             "GZAC"->"DocumentenApi";
             "GZAC"->"Openzaak";
         }
-
    }
