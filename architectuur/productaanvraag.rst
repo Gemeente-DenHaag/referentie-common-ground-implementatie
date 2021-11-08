@@ -8,32 +8,7 @@ Product Aanvraag
 
 Elke productaanvraag ziet er hetzelfde uit. De componenten die een rol vervullen kunnen veranderen maar de communicatie tussen de nodes moet gelijk blijven. Hieronder een schematische weergave van deze productaanvraag.
 
-.. graphviz::
-
-   digraph {
-        rankdir="LR";
-
-
-        subgraph cluster_0 {
-            label = "Gebruiker";
-            "Gebruiker" -> "Formulier";
-            "Formulier" -> "FormulierenApi";
-            "FormulierenApi" -> "ObjectApi";
-        }
-        subgraph cluster_1 {
-            label = "Proces";
-            "OpenNotificatie"->"GZAC";
-            "GZAC"->"ObjectApi";
-            "GZAC"->"DocumentenApi";
-            "GZAC"->"Openzaak";
-        }
-        subgraph subs{
-            rank =same;
-            "ObjectApi"->"OpenNotificatie";  
-        }
-
-   }
-.. image:: /images/productaanvraag.png
+.. image:: /images/graphviz/productaanvraag.svg
    :alt: Portal
    :width: 600
 
