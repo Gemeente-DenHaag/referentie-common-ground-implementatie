@@ -4,8 +4,7 @@ Keycloak
 .. toctree::
    :maxdepth: 2
 
-   componenten/componenten.rst
-   architectuur/architectuur.rst
+
 
 Keycloak is een open source identity en access management oplossing.  We gebruiken keycloak zowel voor de applicaties die we beschikbaar stellen voor de burgers en ook voor medewerkers. 
 

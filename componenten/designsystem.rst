@@ -4,8 +4,6 @@ Design sytem
 .. toctree::
    :maxdepth: 2
 
-   componenten/componenten.rst
-   architectuur/architectuur.rst
 
 Een design system is 1 centrale plaats waar alle online componenten staan. Dit design system kun je vervolgens toepassen op al je online kanalen. 
 

@@ -13,6 +13,7 @@ Sinds juli 2021 werken we met een aantal partners samen om een volledig nieuwe s
 Voor meer informatie neem contact op met Vincent van Beek, productowner van deze implementatie.
 
 .. figure:: /images/component_overview.png 
+   :alt: Overzicht van alle componenten
    :width: 600
    
    Overzicht van alle componenten in de Common Ground Referentie implementatie Den Haag

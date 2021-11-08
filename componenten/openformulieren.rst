@@ -5,8 +5,7 @@ Open Formulieren
 .. toctree::
    :maxdepth: 2
 
-   componenten/componenten.rst
-   architectuur/architectuur.rst
+
 
 `Open Formulieren <https://github.com/open-formulieren/open-forms>`_ is een applicatie waarme beheerders snel slimme formulieren kunnen configureren. Deze formulieren worden geprefilled door slimme koppelingen met bijvoorbeeld HaalCentraal. 
 
