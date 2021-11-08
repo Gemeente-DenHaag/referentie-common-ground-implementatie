@@ -1,5 +1,5 @@
-.. _zgw:
-Zaakgericht werken api's
+.. _keycloak:
+Keycloak
 ==========================================================================
 .. toctree::
    :maxdepth: 2

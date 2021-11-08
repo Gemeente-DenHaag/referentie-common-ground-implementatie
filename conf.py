@@ -19,7 +19,7 @@
 
 project = 'Denhaag Common Ground'
 copyright = '2021'
-author = 'Common Ground ZGW team Den Haa'
+author = 'Common Ground ZGW team Den Haag'
 
 
 # -- General configuration ---------------------------------------------------
@@ -28,7 +28,7 @@ author = 'Common Ground ZGW team Den Haa'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.intersphinx','sphinx_rtd_theme']
-
+html_show_sourcelink = False
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
