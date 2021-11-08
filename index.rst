@@ -6,26 +6,23 @@
 Common Ground Referentie implementatie Den Haag
 ==========================================================================
 
+
+Deze site omschrijft de den haag implementatie van de common ground stack. 
+Sinds juli 2021 werken we met een aantal partners samen om een volledig nieuwe structuur neer te zetten volgens het 5 lagen model van de VNG en met de standaard ZGW api's. Het doel is om tot een volledig open en herbruikbare oplossing te komen die Den Haag zelf kan gebruiken maar die ook toepasbaar is voor andere gemeentes. 
+
+Voor meer informatie neem contact op met Vincent van Beek, productowner van deze implementatie.
+
+.. figure:: /images/component_overview.png 
+   :width: 600
+   
+   Overzicht van alle componenten in de Common Ground Referentie implementatie Den Haag
+
+
 .. toctree::
    :maxdepth: 2
 
-   designsystem.rst
-   zgw.rst
-   gzac.rst
-   portal.rst
-   bff.rst
-
-Deze site omschrijft de den haag implementatie van de common ground stack. Deze bestaat uit een aantal onderdelen. Deze site is bedoeld om het gebruik van en samenhang tussen de verschillende componenten toe te lichten.
-Voor meer neem contact op met Vincent van Beek, productowner van deze implementatie.
-
-.. image:: /images/component_overview.png
-   :width: 600
-
-* :ref:`Design system <design_system>`
-* :ref:`ZGW <zgw>`
-* :ref:`GZAC <gzac>`
-* :ref:`Portal <portal>`
-* :ref:`BFF <bff>`
+   componenten/componenten.rst
+   architectuur/architectuur.rst
 
 
 
