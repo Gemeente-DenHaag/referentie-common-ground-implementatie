@@ -18,7 +18,7 @@ Elke productaanvraag ziet er hetzelfde uit. De componenten die een rol vervullen
             label = "Gebruiker";
             "Gebruiker" -> "Formulier";
             "Formulier" -> "FormulierenApi";
-            "FormulierenApi" -> "ObjectApi" [ label = "ProductAanvraag" ];
+            "FormulierenApi" -> "ObjectApi";
         }
         subgraph cluster_1 {
             label = "Proces";
