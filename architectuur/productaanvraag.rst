@@ -33,6 +33,9 @@ Elke productaanvraag ziet er hetzelfde uit. De componenten die een rol vervullen
         }
 
    }
+.. image:: /images/productaanvraag.png
+   :alt: Portal
+   :width: 600
 
 #. Een aanvraag begint altijd met een gebruiker die een formulier invult. Dit kan zowel een burger zijn die in de portal een formulier invult als een medewerker die in de zaakafhandelapplicatie een zaak aanmaakt.
 #. Dit ingevulde formulier wordt verstuurd naar de FormulierenApi, deze controleert bijvoorbeeld of de (voor)ingevulde waardes juist zijn en of de gebruiker voldoende rechten heeft om het formulier in te sturen.
