@@ -1,29 +1,32 @@
 digraph {
-
+newrank="true"
 layout="dot"
-center="true"
- 
 
 subgraph cluster_laag5{
-    label="Laag 5"
+    rank=same
+    label="Laag 5: Interactie"
     labelloc="t";
     labeljust="l"
     "PWA"[shape=rect,width=1]
     "Filler1"[shape=rect,style=invisible,width=1]
-    "Console"[shape=rect,width=1]
-    "Filler0"[shape=rect,style=invisible,width=1]
+    "Console"[shape=rect,width=1,label="GZAC Console",fixedsize=true,fontsize=10]
+    "Filler0"[shape=rect,width=1,style=invis]
 }
+
+
 subgraph cluster_laag4{
-    label="Laag 4"
+    rank=same
+    label="Laag 4: Proces"
     labelloc="t";
     labeljust="l"
     "BFF"[shape=rect,width=1]
     "Filler2"[shape=rect,style=invisible,width=1]
     "GZAC"[shape=rect,width=1]
-    "Filler3"[shape=rect,style=invisible,width=1]
+    "Filler3"[shape=rect,width=1,style=invis]
 }
 subgraph cluster_laag2{
-    label="Laag 2"
+    rank=same
+    label="Laag 2: Service"
     labelloc="t";
     labeljust="l"
     "a"[shape=rect,width=1,style=invisible]
@@ -33,7 +36,8 @@ subgraph cluster_laag2{
 }
 
 subgraph cluster_4{
-    label="Laag 1"
+    rank=same
+    label="Laag 1 Data"
     labelloc="t";
     labeljust="l"
     "c"[shape=rect,width=1,style=invis]
@@ -42,10 +46,23 @@ subgraph cluster_4{
     "Filler5"[shape=rect,style=invis,width=1]
 }
 
-PWA->BFF[label="JWT"];
-Console->GZAC[label="JWT"];
-GZAC->ZGW[label="JWT"];
-BFF->ZGW[label="JWT"];
+
+
+PWA->BFF->ZGW[label="JWT"];
+Console->GZAC->ZGW[label="JWT"];
+
 ZGW->Datalaag;
 BFF->b[style=invis]
+
+KeyCloak[shape=cylinder];
+KeyCloak->ZGW[label="Valideert JWT",fontsize="10",style=dotted,arrowhead=none];
+Console->KeyCloak[label="GeeftJWT",fontsize="10",style=dotted,arrowhead=none];
+PWA->KeyCloak[label="Geeft JWT",fontsize="10",style=dotted,arrowhead=none];
+
+FillerX[shape=rect,width=1,style=invis]
+FillerY[shape=rect,width=1,style=invis]
+FillerZ[shape=rect,width=1,style=invis]
+FillerX->KeyCloak[style=invis]
+FillerY->KeyCloak[style=invis]
+FillerZ->KeyCloak[style=invis]
 }
