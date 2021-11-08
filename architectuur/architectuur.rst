@@ -11,3 +11,4 @@ Architectuur
    productaanvraag.rst
    rbac.rst
    anderezaaksysteem.rst
+   taak.rst

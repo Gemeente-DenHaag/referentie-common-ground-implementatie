@@ -24,6 +24,7 @@ Voor meer informatie neem contact op met Vincent van Beek, productowner van deze
 
    componenten/componenten.rst
    architectuur/architectuur.rst
+   infrastructuur.rst
 
 
 
