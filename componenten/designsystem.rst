@@ -2,7 +2,7 @@
 Design sytem
 ==========================================================================
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
 
 Een design system is 1 centrale plaats waar alle online componenten staan. Dit design system kun je vervolgens toepassen op al je online kanalen. 

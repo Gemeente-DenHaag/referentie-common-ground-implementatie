@@ -1,6 +1,6 @@
 .. _rbac:
 
-RBAC (Role based access)
+RBAC (Role Based ACcess)
 ==========================================================================
 
 .. toctree::

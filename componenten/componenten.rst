@@ -12,16 +12,16 @@ Voor meer informatie neem contact op met Vincent van Beek, productowner van deze
    :width: 600
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    componenten/componenten.rst
-   zgw.rst
    designsystem.rst
    keycloak.rst
    bff.rst
    gzac.rst
    openformulieren.rst
    portal.rst
+   zgw/zgw.rst
    architectuur/architectuur.rst
 
 Deze implementatie is opgezet door een team van `Ritense <https://www.ritense.com/>`_ , `Maykin Media <https://www.maykinmedia.nl/>`_ en `Den Haag <https://www.denhaag.nl/>`_ 

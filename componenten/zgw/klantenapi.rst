@@ -1,10 +1,8 @@
-.. _bff:
-BFF
+.. _klantapi:
+Klanten api
 ==========================================================================
 .. toctree::
    :maxdepth: 3
 
 
-
-BFF
-
+Klant + Klantcontact + Contactmoment

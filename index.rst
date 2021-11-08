@@ -20,7 +20,7 @@ Voor meer informatie neem contact op met Vincent van Beek, productowner van deze
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    componenten/componenten.rst
    architectuur/architectuur.rst

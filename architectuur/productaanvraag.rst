@@ -6,7 +6,7 @@ Product Aanvraag
 .. toctree::
    :maxdepth: 2
 
-Elke productaanvraag ziet er hetzelfde uit. De componenten die een rol vervullen kunnen veranderen maar de communicatie tussen de nodes moet gelijk blijven. Hieronder een schematische weergave van deze productaanvraag.
+Elke productaanvraag ziet er hetzelfde uit. Dit is niet afhankelijk van welk formuliersysteem de aanvraag indiend of welk zaakafhandelsysteem de zaak afhandeld. De componenten die een rol vervullen kunnen veranderen maar de communicatie tussen de nodes moet gelijk blijven. Hieronder een schematische weergave van deze productaanvraag.
 
 .. image:: /images/graphviz/productaanvraag.svg
    :alt: Portal
