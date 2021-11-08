@@ -14,14 +14,4 @@ asdf
       "From" -> "To";
    }
 
-.. uml:: 
-   
-   @startuml
-   user -> (use PlantUML)
-
-   note left of user
-      Hello!   
-   end note
-   @enduml
-
 sdfg
