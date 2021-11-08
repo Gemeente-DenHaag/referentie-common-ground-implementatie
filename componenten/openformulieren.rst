@@ -1,4 +1,5 @@
 .. _openformulieren:
+
 Open Formulieren
 ==========================================================================
 .. toctree::
@@ -7,6 +8,9 @@ Open Formulieren
    componenten/componenten.rst
    architectuur/architectuur.rst
 
+`Open Formulieren <https://github.com/open-formulieren/open-forms>`_ is een applicatie waarme beheerders snel slimme formulieren kunnen configureren. Deze formulieren worden geprefilled door slimme koppelingen met bijvoorbeeld HaalCentraal. 
 
-Standaard : `ZGW Api's <https://vng-realisatie.github.io/gemma-zaken/standaard/>`_.
-Implementatie : `ZGW Api's <https://github.com/open-zaak>`_. - `Maykin Media <https://www.maykinmedia.nl/>`_
+Ingestuurde formulieren worden vervolgens opgepakt door het Generieke Zaak Afhandel Component, op de juiste manier in de ZGW api's geregisteerd en kunnen direct door medewerkers behandeld worden. Uiteraard zijn alle zaken van een aanvrager ook direct zichtbaar in de Portal. 
+
+Op het :ref:`architectuur` onderdeel van deze site staat de :ref:`productaanvraag` in detail uitgewerkt.
+

@@ -1,4 +1,4 @@
 # sphinx build folder
 _build
-
+.vscode
 *.bat

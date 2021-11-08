@@ -8,6 +8,7 @@ Deze site omschrijft de den haag implementatie van de common ground stack. Deze 
 Voor meer informatie neem contact op met Vincent van Beek, productowner van deze implementatie.
 
 .. image:: /images/component_overview.png
+   :alt: Overzicht componenten
    :width: 600
 
 .. toctree::
