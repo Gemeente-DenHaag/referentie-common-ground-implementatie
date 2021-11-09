@@ -10,6 +10,6 @@ Keycloak is een open source identity en access management oplossing.  We gebruik
 
 Bij burgers authenticeren we tegen DigiD of eHerkenning, bij medewerkers gebruiken we de interne Identity Provider.
 
-Op :ref:`rbac` staat meer informatie over hoe we met toegang tot databronnen omgaan in combinatie met authenticatie.
+Op :ref:`rbac` staat meer informatie over hoe we met toegang tot api's omgaan in combinatie met authenticatie.
 
 

@@ -1,0 +1,27 @@
+digraph {
+    layout=dot
+    rankdir="T"
+    subgraph cons{
+        rank=same
+        FillerX[shape=rect,width=1,style=invis]
+        KeyCloak[shape=rect]
+    }
+    newrank=true
+
+    
+
+    subgraph cons2{
+        rank=same
+        Frontend[shape=rect]
+        BFF[shape=rect]
+        API[shape=rect]
+    }
+
+    Frontend->BFF[label="{\l clientid=fe; \l audience=bff; \l}\l",align="left",fontsize=8]
+    BFF->KeyCloak
+    KeyCloak->BFF
+    BFF->API[label="{\l clientid=fe; \l audience=bff; \l}\l",align="left",fontsize=8]
+
+
+ 
+}

@@ -1,0 +1,19 @@
+digraph {
+    layout=dot
+    rankdir="T"
+
+
+    subgraph cons2{
+        rank=same
+        Frontend[shape=rect]
+        BFF[shape=rect]
+        API[shape=rect]
+    }
+
+    Frontend->BFF[label="{\l   clientid=fe; \l   audience=bff; \l}\l",align="left",fontsize=8]
+
+    BFF->API[label="{\l   clientid=fe; \l   audience=bff; \l}\l",align="left",fontsize=8]
+
+
+ 
+}
