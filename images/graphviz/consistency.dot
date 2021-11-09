@@ -1,0 +1,17 @@
+digraph {
+    rankdir="TD";
+
+    ZaakSysteem[shape=rect,width=2]
+    Consistency[shape=rect,width=2]
+    sendMail[shape=rect,width=2]
+    Openzaak[shape=rect,width=2]
+
+    ZaakSysteem->Consistency[label="ZaakUpdate()",fontsize=8]
+
+    subgraph cons{
+        rank=same
+        Consistency->sendMail;
+    }
+    Consistency->Openzaak
+    
+}
