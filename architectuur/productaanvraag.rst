@@ -1,11 +1,20 @@
 .. _productaanvraag:
-
+##################
 Product Aanvraag
-==========================================================================
+##################
 
 .. toctree::
    :maxdepth: 2
 
+Er zijn 3 varianten van productaanvragen:
+
+#. Productaanvraag en afhandeling verlopen via deze Common Ground Referentie implementatie
+#. Productaanvraag verloopt niet via Common Ground Referentie implementatie; afhandeling verloopt wel via Common Ground Referentie implementatie
+#. Productaanvraag en afhandeling verlopen niet via Common Ground Referentie implementatie
+
+*********
+1. Volledige Common Ground Referentie implementatie
+*********
 Elke productaanvraag ziet er hetzelfde uit. Dit is niet afhankelijk van welk formuliersysteem de aanvraag indiend of welk zaakafhandelsysteem de zaak afhandeld. De componenten die een rol vervullen kunnen veranderen maar de communicatie tussen de nodes moet gelijk blijven. Hieronder een schematische weergave van deze productaanvraag.
 
 .. image:: /images/graphviz/productaanvraag.svg
@@ -18,3 +27,14 @@ Elke productaanvraag ziet er hetzelfde uit. Dit is niet afhankelijk van welk for
 #. OpenNotificatie is een messagebus. Ieder component dat geabboneerd is op dit type notificatie krijgt een notificatie. GZAC is hierop geabbonneerd en krijgt dus een seintje
 #. GZAC (Generiek ZaakAfhandel Component) haalt vervolgens de productaanvraag op uit de ObjectApi.
 #. Vervolgens maakt GZAC de zaak aan in OpenZaak en plaatst eventuele documenten in de DocumentenApi
+
+*********
+2. Aanvraag buiten implementatie; afhandeling binnen
+*********
+🚨 Moet verder uitgewerkt worden
+
+
+*********
+3. Volledig buiten implementatie
+*********
+🚨 Moet verder uitgewerkt worden
