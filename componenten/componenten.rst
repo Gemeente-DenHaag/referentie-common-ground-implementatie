@@ -15,15 +15,16 @@ Voor meer informatie neem contact op met Vincent van Beek, productowner van deze
    :maxdepth: 3
 
    componenten/componenten.rst
-   productdienstcatalogus.rst
+   
    designsystem.rst
    keycloak.rst
    bff.rst
    gzac.rst
    openformulieren.rst
    portal.rst
-   consistencylayer.rst
    zgw/zgw.rst
+   productdienstcatalogus.rst
+   consistencylayer.rst
    architectuur/architectuur.rst
 
 Deze implementatie is opgezet door een team van `Ritense <https://www.ritense.com/>`_ , `Maykin Media <https://www.maykinmedia.nl/>`_ en `Den Haag <https://www.denhaag.nl/>`_ 
