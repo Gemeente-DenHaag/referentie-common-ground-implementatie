@@ -1,3 +1,3 @@
-for input in ls *.dot;
-do echo $input;
+for input in *.dot;
+do dot -Tsvg $input > ${input/dot/svg}
 done

@@ -1,27 +1,24 @@
 digraph {
     layout=dot
-    rankdir="T"
+    rankdir="TD"
+ 
+
     subgraph cons{
         rank=same
-        FillerX[shape=rect,width=1,style=invis]
-        KeyCloak[shape=rect]
+        rank1[style=invis]
+        KeyCloak[shape=cylinder]
     }
-    newrank=true
-
-    
 
     subgraph cons2{
         rank=same
         Frontend[shape=rect]
         BFF[shape=rect]
         API[shape=rect]
+        rank2[style=invis]
     }
+    rank1->rank2[style=invis]
 
     Frontend->BFF[label="{\l clientid=fe; \l audience=bff; \l}\l",align="left",fontsize=8]
-    BFF->KeyCloak
-    KeyCloak->BFF
-    BFF->API[label="{\l clientid=fe; \l audience=bff; \l}\l",align="left",fontsize=8]
-
-
- 
+    BFF->KeyCloak[dir=both,label="{\l  granttype=client_credentials; \l  clientid=fe; \l  scope=api; \l}\l",align="left",fontsize=8]
+    BFF->API[label="{\l  clientid=api; \l  audience=api; \l}\l",align="left",fontsize=8]
 }

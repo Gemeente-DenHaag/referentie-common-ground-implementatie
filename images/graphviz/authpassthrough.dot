@@ -1,7 +1,8 @@
 digraph {
     layout=dot
-    rankdir="T"
 
+    helper[style=invis]
+    helper->Frontend[style=invis]
 
     subgraph cons2{
         rank=same
@@ -11,9 +12,6 @@ digraph {
     }
 
     Frontend->BFF[label="{\l   clientid=fe; \l   audience=bff; \l}\l",align="left",fontsize=8]
-
     BFF->API[label="{\l   clientid=fe; \l   audience=bff; \l}\l",align="left",fontsize=8]
 
-
- 
 }

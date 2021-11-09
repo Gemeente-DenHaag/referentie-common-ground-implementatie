@@ -88,7 +88,8 @@
 <!-- GZAC&#45;&gt;ObjectApi -->
 <g id="edge6" class="edge">
 <title>GZAC&#45;&gt;ObjectApi</title>
-<path fill="none" stroke="black" d="M371.6,-101.77C388.95,-112.24 413.59,-126.86 435.57,-139 486.12,-166.92 545.58,-197.2 583.38,-216.13"/>
+<path fill="none" stroke="black" d="M380.23,-106.96C396.59,-116.75 417.02,-128.75 435.57,-139 486.12,-166.92 545.58,-197.2 583.38,-216.13"/>
+<polygon fill="black" stroke="black" points="381.98,-103.92 371.6,-101.77 378.37,-109.92 381.98,-103.92"/>
 <polygon fill="black" stroke="black" points="581.99,-219.35 592.5,-220.69 585.12,-213.09 581.99,-219.35"/>
 </g>
 <!-- DocumentenApi -->

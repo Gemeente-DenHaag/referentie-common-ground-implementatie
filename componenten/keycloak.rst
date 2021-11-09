@@ -4,8 +4,6 @@ Keycloak
 .. toctree::
    :maxdepth: 3
 
-
-
 Keycloak is een open source identity en access management oplossing.  We gebruiken keycloak zowel voor de applicaties die we beschikbaar stellen voor de burgers en ook voor medewerkers. 
 
 Bij burgers authenticeren we tegen DigiD of eHerkenning, bij medewerkers gebruiken we de interne Identity Provider.
@@ -13,3 +11,10 @@ Bij burgers authenticeren we tegen DigiD of eHerkenning, bij medewerkers gebruik
 Op :ref:`rbac` staat meer informatie over hoe we met toegang tot api's omgaan in combinatie met authenticatie.
 
 
+.. image:: /images/graphviz/authpassthrough.svg
+   :alt: Schematische weergave passthrough
+   :width: 600
+
+.. image:: /images/graphviz/authgrant.svg
+   :alt: Schematische weergave grant
+   :width: 600
