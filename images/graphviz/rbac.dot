@@ -55,9 +55,9 @@ ZGW->Datalaag;
 BFF->b[style=invis]
 
 KeyCloak[shape=cylinder];
-KeyCloak->ZGW[label="Valideert JWT",fontsize="10",style=dotted,arrowhead=none];
-Console->KeyCloak[label="GeeftJWT",fontsize="10",style=dotted,arrowhead=none];
-PWA->KeyCloak[label="Geeft JWT",fontsize="10",style=dotted,arrowhead=none];
+KeyCloak->ZGW[label="Valideert JWT",fontsize="10",style=dotted,arrowhead=normal,dir=back];
+Console->KeyCloak[label="GeeftJWT",fontsize="10",style=dotted,arrowhead=normal,dir=back];
+PWA->KeyCloak[label="Geeft JWT",fontsize="10",style=dotted,arrowhead=normal,dir=back];
 
 FillerX[shape=rect,width=1,style=invis]
 FillerY[shape=rect,width=1,style=invis]

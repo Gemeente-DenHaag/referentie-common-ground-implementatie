@@ -1,11 +1,10 @@
 .. _gzac:
-GZAC
+GZAC (Generiek Zaak Afhandel Component)
 ==========================================================================
 .. toctree::
    :maxdepth: 3
 
 
 
-
-Valtimo
-Implementatie : `Valtimo <https://www.valtimo.nl>`_ -  `Ritense <https://www.ritense.com/>`_
+* `Camunda <https://camunda.com>`_
+* `Valtimo <https://www.valtimo.nl>`_
