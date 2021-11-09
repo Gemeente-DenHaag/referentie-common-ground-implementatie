@@ -1,10 +1,5 @@
-.. _bff:
-BFF (Backend For Frontend)
+.. _klantconvenience:
+🚨 Klant convenience
 ==========================================================================
 .. toctree::
    :maxdepth: 3
-
-
-
-BFF
-
