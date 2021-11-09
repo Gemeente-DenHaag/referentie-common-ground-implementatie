@@ -6,5 +6,5 @@ BFF (Backend For Frontend)
 
 
 
-BFF
+BFF portal -> bff -> api
 

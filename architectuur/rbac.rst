@@ -8,7 +8,7 @@ RBAC (Role Based ACcess)
 
 Een belangrijk onderdeel van onze setup is RBAC. RBAC staat voor Role based access oftewel Rolgebaseerd toegang.
 
-Binnen onze setup liggen de rollen vast in keycloak; op het moment van inloggen in een client applicatie (:ref:`portal` of :ref:`gzac`) bepaald keycloak welke rol iemand heeft en communiceert dit terug naar door middel van een JWT token.
+Binnen onze setup liggen de rollen vast in :ref:`keycloak`; op het moment van inloggen in een client applicatie (:ref:`portal` of :ref:`gzac`) bepaald keycloak welke rol iemand heeft en communiceert dit terug naar door middel van een JWT token.
 
 Dit access token wordt vervolgens door de applicatie met alle requests meegestuurd. De service laag bepaalt vervolgens op basis van de rol en identiteit van de gebruiker welke informatie hij terug mag geven. 
 
@@ -20,4 +20,4 @@ Hieronder een schematische weergave van onze RBAC oplossing.
 
 .. image:: /images/graphviz/rbac.svg
    :alt: Schematisch overzicht RBAC
-   :width: 600
+

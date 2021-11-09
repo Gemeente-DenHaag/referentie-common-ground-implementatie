@@ -8,9 +8,12 @@ Portal (PWA)
 
 Onderdeel van onze oplossing is een nieuwe portal. In deze portal kunnen burgers en bedrijven nadat ze ingelogd zijn met DigiD of eHerkenning direct hun eigen zaken regelen.
 
-.. image:: /images/portal.png
+.. figure:: /images/portal.png
    :alt: Portal
-   :width: 600
+
+   Schermafbeelding van de portal
+
+
 
 De portal is een react app gebouwd waarvan de voorkant het NL Design System gebruikt. Met behulp van `Design tokens <https://css-tricks.com/what-are-design-tokens/>`_ kan de vormgeving volgens de huisstijl van de gemeente getoond worden.
 In de portal kun je op dit moment:
