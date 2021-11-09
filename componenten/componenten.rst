@@ -15,12 +15,14 @@ Voor meer informatie neem contact op met Vincent van Beek, productowner van deze
    :maxdepth: 3
 
    componenten/componenten.rst
+   productdienstcatalogus.rst
    designsystem.rst
    keycloak.rst
    bff.rst
    gzac.rst
    openformulieren.rst
    portal.rst
+   consistencylayer.rst
    zgw/zgw.rst
    architectuur/architectuur.rst
 
