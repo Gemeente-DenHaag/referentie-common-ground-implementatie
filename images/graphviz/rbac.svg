@@ -8,15 +8,15 @@
  viewBox="0.00 0.00 636.00 409.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 405)">
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-405 632,-405 632,4 -4,4"/>
-<g id="clust2" class="cluster">
-<title>cluster_laag4</title>
-<polygon fill="none" stroke="black" points="8,-210 8,-285 366,-285 366,-210 8,-210"/>
-<text text-anchor="middle" x="58" y="-269.8" font-family="Times,serif" font-size="14.00">Laag 4: Proces</text>
-</g>
 <g id="clust1" class="cluster">
 <title>cluster_laag5</title>
 <polygon fill="none" stroke="black" points="8,-318 8,-393 366,-393 366,-318 8,-318"/>
 <text text-anchor="middle" x="65.5" y="-377.8" font-family="Times,serif" font-size="14.00">Laag 5: Interactie</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_laag4</title>
+<polygon fill="none" stroke="black" points="8,-210 8,-285 366,-285 366,-210 8,-210"/>
+<text text-anchor="middle" x="58" y="-269.8" font-family="Times,serif" font-size="14.00">Laag 4: Proces</text>
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_laag2</title>

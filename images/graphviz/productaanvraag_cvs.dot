@@ -1,0 +1,50 @@
+   digraph {
+        rankdir="TB";
+        nodesep=0.5;
+        node [shape="box",width=2];
+        fontsize=20;
+
+        subgraph helper_left{
+            rank=same;
+            helper1[style=invis];
+            helper2[style=invis];
+            helper3[style=invis];
+            helper1->helper2->helper3[style=invis];
+        }
+
+        subgraph cluster_cvs{
+            label="CVS"
+            labelloc="t";
+            labeljust="l"
+            CVS;
+            PDC;
+            PDC->CVS;
+        }
+
+        subgraph cluster_zgw{
+            label="ZGW"
+            labelloc="t";
+            labeljust="l"
+            OpenFormulieren;
+            ObjectApi;
+            OpenNotificatie;
+        }  
+
+        helper3->OpenFormulieren[style=invis];
+        helper2->Portal[style=invis];
+        helper1->PDC[style=invis];
+
+        Portal->PDC[dir=both,label="1 geefFormulierIdVoor(WMO)"];
+        Portal->OpenFormulieren[label="2 geefFormulier(id)",dir=both]
+        Portal->Portal[label="3 gebruiker vult form in"];
+
+
+        Portal->OpenFormulieren[label="4 ingevuld formulier"];
+        OpenFormulieren->ObjectApi[label="5 ProductAanvraag"];
+        ObjectApi->OpenNotificatie[label="6 Nieuwe Aanvraag()"];
+
+        CVS->ObjectApi[label="8 Haalt ingevulde waardes op",dir=both];
+
+        OpenNotificatie->CVS[label="7 Notificatie"]
+
+   }
