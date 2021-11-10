@@ -34,14 +34,14 @@
         helper2->Portal[style=invis];
         helper1->PDC[style=invis];
 
-        Portal->PDC[dir=both,label="1 geefFormulierIdVoor(WMO)"];
+        Portal->PDC[dir=both,label="1 geefFormulierId"];
         Portal->OpenFormulieren[label="2 geefFormulier(id)",dir=both]
         Portal->Portal[label="3 gebruiker vult form in"];
 
 
         Portal->OpenFormulieren[label="4 ingevuld formulier"];
         OpenFormulieren->ObjectApi[label="5 ProductAanvraag"];
-        ObjectApi->OpenNotificatie[label="6 Nieuwe Aanvraag()"];
+        ObjectApi->OpenNotificatie[label="6 Nieuwe Aanvraag"];
 
         CVS->ObjectApi[label="8 Haalt ingevulde waardes op",dir=both];
 

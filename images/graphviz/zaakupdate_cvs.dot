@@ -1,0 +1,18 @@
+digraph {
+    rankdir="TD";
+
+    CVS[shape=rect,width=2]
+    Consistency[shape=rect,width=2]
+    sendMail[shape=rect,width=2]
+    Openzaak[shape=rect,width=2]
+    Portal[shape=rect,width=2]
+
+    CVS->Consistency[label="ZaakUpdate()",fontsize=8]
+
+    subgraph cons{
+        rank=same
+        Consistency->sendMail;
+    }
+    Consistency->Openzaak
+    Openzaak->Portal
+}
