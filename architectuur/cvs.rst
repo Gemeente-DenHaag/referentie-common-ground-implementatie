@@ -22,13 +22,13 @@ Aanvraagproces
 ***************
 
 
-1. De gebruiker kiest het aan te vragen product; uit de PDC wordt opgehaald welke formulierdefinitie hierbij hoort
+1. De gebruiker kiest het aan te vragen product; uit de PDC wordt opgehaald of gebruiker hier voldoende machtigingen voor heeft en welke formulierdefinitie hierbij hoort
 2. De gebruiker opent het formulier met de zojuist opgehaalde definitie
 3. De gebruiker vult het formulier in
 4. De gebruiker verstuurd het formulier (naar OpenFormulieren)
-5. Openformulieren slaat het formulier op in de objectapi
+5. Openformulieren slaat het formulier op in de ProductAanvraagRepository
 6. Stap 5 triggert een notificatie 
-7. CVS is geabbonneerd op deze notificatie en ontvangt deze
+7. CVS is geabbonneerd op deze notificatie en ontvangt deze (webhook)
 8. Met de informatie in de notificatie haalt het CVS het ingevulde formulier op uit de ObjectApi
 
 .. figure:: /images/graphviz/productaanvraag_cvs.svg

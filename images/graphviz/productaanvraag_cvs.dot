@@ -1,7 +1,7 @@
    digraph {
         rankdir="TB";
         nodesep=0.5;
-        node [shape="box",width=2];
+        node [shape="box",width=2.5];
         fontsize=20;
 
         subgraph helper_left{
@@ -26,7 +26,7 @@
             labelloc="t";
             labeljust="l"
             OpenFormulieren;
-            ObjectApi;
+            ProductAanvraagRepository;
             OpenNotificatie;
         }  
 
@@ -40,8 +40,8 @@
 
 
         Portal->OpenFormulieren[label="4 ingevuld formulier"];
-        OpenFormulieren->ObjectApi[label="5 ProductAanvraag"];
-        ObjectApi->OpenNotificatie[label="6 Nieuwe Aanvraag"];
+        OpenFormulieren->ProductAanvraagRepository[label="5 ProductAanvraag"];
+        ProductAanvraagRepository->OpenNotificatie[label="6 Nieuwe Aanvraag"];
 
         CVS->ObjectApi[label="8 Haalt ingevulde waardes op",dir=both];
 
