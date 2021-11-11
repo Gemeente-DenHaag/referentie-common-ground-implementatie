@@ -27,6 +27,5 @@ Voor meer informatie neem contact op met Vincent van Beek, productowner van deze
    infrastructuur.rst
 
 
-
 Deze implementatie is opgezet door een team van `Ritense <https://www.ritense.com/>`_ , `Maykin Media <https://www.maykinmedia.nl/>`_ en `Den Haag <https://www.denhaag.nl/>`_ 
 

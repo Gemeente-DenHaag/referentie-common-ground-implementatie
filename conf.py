@@ -27,7 +27,7 @@ author = 'Common Ground ZGW team Den Haag'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx.ext.intersphinx','sphinx_rtd_theme','sphinx.ext.autosectionlabel','sphinx.ext.graphviz']
+extensions = ['sphinx.ext.intersphinx','sphinx_rtd_theme','sphinx.ext.autosectionlabel']
 html_show_sourcelink = False
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -59,3 +59,8 @@ html_theme_options = { 'prev_next_buttons_location': 'bottom'}
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_css_files = [
+    'css/style.css'
+]
+
+rst_prolog = open('global.rst', 'r').read()

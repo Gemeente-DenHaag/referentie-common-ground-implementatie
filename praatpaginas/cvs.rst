@@ -1,13 +1,13 @@
 .. _cvs:
 
-
 .. toctree::
    :maxdepth: 2
 
 
-===============
+=========================================================
 Concept samenwerking CVS en openformulieren
-===============
+=========================================================
+
 
 Mogelijke uitwerking van hoe de nieuwe MDH portal, CVS en openformulieren samen kunnen werken
 
