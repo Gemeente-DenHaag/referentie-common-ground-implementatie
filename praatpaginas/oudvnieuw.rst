@@ -31,7 +31,7 @@ Hieronder heb ik van een typisch Mijn Den Haag project aangegeven hoe de opbouw 
      - Maatwerk schermen in Mijn Denhaag |br| |br| Maatwerk code in key2/adeptia die dmv queries op de database data retourneert
      - Standaard functionaliteit van portal om openzaak data weer te geven |br| |br| Standaard functionaliteit van :ref:`gzac` om zaak in openzaak bij te houden
    * - Documenten downloaden
-     - Maatwerk code om data uit key2 op te halen |br||br|Maatwerk koppeling met plato
+     - Maatwerk code om data uit key2 op te halen |br| |br| Maatwerk koppeling met plato
      - Standaard functionaliteit van openzaak, portal en document api   
 
 
