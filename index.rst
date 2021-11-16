@@ -25,6 +25,7 @@ Voor meer informatie neem contact op met Vincent van Beek, productowner van deze
    componenten/componenten.rst
    architectuur/architectuur.rst
    infrastructuur.rst
+   gebruikersdocumentatie/gebruikersdocumentatie.rst
 
 
 Deze implementatie is opgezet door een team van `Ritense <https://www.ritense.com/>`_ , `Maykin Media <https://www.maykinmedia.nl/>`_ en `Den Haag <https://www.denhaag.nl/>`_ 
