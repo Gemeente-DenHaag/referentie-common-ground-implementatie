@@ -6,3 +6,4 @@ Gebruikersdocumentatie
    :maxdepth: 2
 
    connectgzactoopenzaak.rst
+   openformulieren.rst
