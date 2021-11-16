@@ -13,6 +13,18 @@ Binnen open formulieren kunnen formulier definities opgeslagen worden als JSON d
 
 Ingestuurde formulieren worden vervolgens opgepakt door het Generieke Zaak Afhandel Component, op de juiste manier in de ZGW api's geregisteerd en kunnen direct door medewerkers behandeld worden. Uiteraard zijn alle zaken van een aanvrager ook direct zichtbaar in de Portal. 
 
-
 Op het :ref:`architectuur` onderdeel van deze site staat de :ref:`productaanvraag` in detail uitgewerkt.
+
+==========================================================================
+Sequence diagrammen Open Formulieren
+==========================================================================
+
+
+.. figure:: /images/ssd/formulierpubliek.png
+   :alt: SSD van gebruik van een publiek formulier
+
+   SSD van gebruik van een publiek formulier
+
+
+
 
