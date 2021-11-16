@@ -1,6 +1,11 @@
 .. _portal:
+
+
+==========================================================================
 Portal (PWA)
 ==========================================================================
+
+
 .. toctree::
    :maxdepth: 3
 
@@ -32,3 +37,4 @@ De portal is op dit moment in volle ontwikkeling, in de komende tijd gaan we de 
 * Betaalflows
 * Rijkere content zoals bijvoorbeeld wijkberichten
 
+Met :ref:`plugins` is het mogelijk om de functionaliteit van de portal zelf uit te breiden.
