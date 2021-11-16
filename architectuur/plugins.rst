@@ -13,5 +13,5 @@ Dit kan door in de react app aparte componenten mee te bouwen in de frontend cod
 .. image:: /images/yed/plugin.png
    :alt: Visuele weergave componenten
 
-Deze componenten kunnen dan meeliften op de authenticatie van keycloak. 
+Deze componenten kunnen dan gebruik maken van de authenticatie van keycloak. 
 
