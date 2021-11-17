@@ -1,0 +1,23 @@
+title OpenFormulieren waarvoor gebruiker ingelogd moet zijn
+
+Client->Wordpress:geefPagina(formulier.htm)
+Wordpress-->Client:html met link naar formulier X
+Client->MijnOmgeving:geefPagina(formulier.htm)
+MijnOmgeving-->Client:redirectLogin
+Client->KeyCloak:login
+KeyCloak->KeyCloak:log in
+note right of KeyCloak:hier vindt de login op digid \nof eherkenning plaats
+KeyCloak-->Client:redirect(formulier.htm,jwt)
+Client->MijnOmgeving:geefPagina(formulier.htm,jwt)
+MijnOmgeving->KeyCloak:valideerToken(jwt)
+KeyCloak-->MijnOmgeving:ok
+MijnOmgeving-->Client:html met verwijzing naar formulier X
+Client->OpenFormulieren:geefFormulier(X,jwt)
+OpenFormulieren->KeyCloak:valideerToken(jwt)
+KeyCloak-->OpenFormulieren:ok
+OpenFormulieren-->Client:formulierDefinitie
+Client->Client:render(formulierDefinitie)
+Client->Client:vult formulier in
+Client->OpenFormulieren:submitForm(values,jwt)
+
+

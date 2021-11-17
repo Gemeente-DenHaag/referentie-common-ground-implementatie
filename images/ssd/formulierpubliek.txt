@@ -1,9 +1,9 @@
 title OpenFormulieren Open Website
 
 Client->Wordpress:geefPagina(formulier.htm)
-Wordpress->Client:html met verwijzing naar formulier X
+Wordpress-->Client:html met verwijzing naar formulier X
 Client->OpenFormulieren:geefFormulier(X)
-OpenFormulieren->Client:formulierDefinitie
+OpenFormulieren-->Client:formulierDefinitie
 Client->Client:render(formulierDefinitie)
 Client->Client:vult formulier in
 Client->OpenFormulieren:submitForm()

@@ -26,5 +26,8 @@ Sequence diagrammen Open Formulieren
    SSD van gebruik van een publiek formulier
 
 
+.. figure:: /images/ssd/formulierlogin.png
+   :alt: SSD van gebruik van een login formulier
 
+   SSD van gebruik van een login formulier
 
