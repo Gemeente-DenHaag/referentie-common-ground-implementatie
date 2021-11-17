@@ -1,4 +1,6 @@
 .. _architectuur:
+
+==========================================================================
 Architectuur
 ==========================================================================
 
@@ -12,5 +14,6 @@ Architectuur
    rbac.rst
    anderezaaksysteem.rst
    taak.rst
+   zaakdetails.rst
    zaakdata.rst
    plugins.rst
