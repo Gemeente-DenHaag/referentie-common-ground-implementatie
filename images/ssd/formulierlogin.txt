@@ -1,4 +1,4 @@
-title OpenFormulieren waarvoor gebruiker ingelogd moet zijn
+title OpenFormulieren waarvoor gebruiker ingelogd moet zijn (klantreis begint op publieke site)
 
 Client->Wordpress:geefPagina(formulier.htm)
 Wordpress-->Client:html met link naar formulier X
@@ -19,5 +19,3 @@ OpenFormulieren-->Client:formulierDefinitie
 Client->Client:render(formulierDefinitie)
 Client->Client:vult formulier in
 Client->OpenFormulieren:submitForm(values,jwt)
-
-

@@ -20,14 +20,19 @@ Sequence diagrammen Open Formulieren
 ==========================================================================
 
 
+In onze opzet van denhaag.nl gebruiken we wordpress als CMS. In het CMS kan met een component een formulier op een pagina gezet worden. Onder water wordt het formulier ingeladen vanaf openformulieren, maar voor de burger staat het in de website.
+
 .. figure:: /images/ssd/formulierpubliek.png
    :alt: SSD van gebruik van een publiek formulier
 
    SSD van gebruik van een publiek formulier
 
 
-.. figure:: /images/ssd/formulierlogin.png
-   :alt: SSD van gebruik van een login formulier
+Binnen de portal werkt het vergelijkbaar; ook hier staat het formulier in openformulieren maar wordt het voor de burger ingeladen alsof het in de portal staat.
 
-   SSD van gebruik van een login formulier
+
+.. figure:: /images/ssd/formulierlogin.png
+   :alt: SSD van gebruik van een formulier in de portal
+
+   SSD van gebruik van een formulier in de portal waarvoor klant ingelogd moet zijn
 
