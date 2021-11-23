@@ -1,5 +1,5 @@
 .. _design_system:
-Design sytem
+Design system
 ==========================================================================
 .. toctree::
    :maxdepth: 3
