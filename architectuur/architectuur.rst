@@ -15,5 +15,4 @@ Architectuur
    anderezaaksysteem.rst
    taak.rst
    zaakdetails.rst
-   zaakdata.rst
    plugins.rst
