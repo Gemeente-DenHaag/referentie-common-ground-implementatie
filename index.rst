@@ -10,7 +10,7 @@ Common Ground Referentie implementatie Den Haag
 Deze site omschrijft de den haag implementatie van de common ground stack. 
 Sinds juli 2021 werken we met een aantal partners samen om een volledig nieuwe structuur neer te zetten volgens het 5 lagen model van de VNG en met de standaard ZGW api's. Het doel is om tot een volledig open en herbruikbare oplossing te komen die Den Haag zelf kan gebruiken maar die ook toepasbaar is voor andere gemeentes. 
 
-Voor meer informatie neem contact op met Vincent van Beek, productowner van deze implementatie.
+Voor meer informatie neem contact op met Vincent van Beek, Product Owner van deze implementatie (vincent.vanbeek@denhaag.nl) of (peter.vanmanen@denhaag.nl).
 
 .. figure:: /images/component_overview.png 
    :alt: Overzicht van alle componenten
@@ -30,3 +30,5 @@ Voor meer informatie neem contact op met Vincent van Beek, productowner van deze
 
 Deze implementatie is opgezet door een team van `Ritense <https://www.ritense.com/>`_ , `Maykin Media <https://www.maykinmedia.nl/>`_ en `Den Haag <https://www.denhaag.nl/>`_ 
 
+
+ 
