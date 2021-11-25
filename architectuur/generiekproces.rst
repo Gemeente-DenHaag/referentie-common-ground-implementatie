@@ -8,11 +8,7 @@ Generiek proces
    :maxdepth: 2
 
 
-Veel van de processen van Den Haag lijken heel veel op elkaar. Al deze processen:
+Dit is het generieke proces van Den Haag. Dit basis proces dient als blueprint voor de andere processen, met name op het vlak van ZGW api's.
 
-- Worden aangevraagd door een burger
-- BSN en NAW zijn onderdeel van aanvraagproces
-- Bevatten 1 of meer documenten
-- Leiden vaak tot een besluit en/of product
-
-
+.. image:: /images/bpmn/generiekproces.png
+   :alt: Generiek proces
