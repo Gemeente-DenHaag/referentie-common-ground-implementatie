@@ -10,6 +10,7 @@ Architectuur
    componenten/componenten.rst
    architectuur/architectuur.rst
    architectuurprincipes.rst
+   generiekproces.rst
    productaanvraag.rst
    rbac.rst
    anderezaaksysteem.rst
