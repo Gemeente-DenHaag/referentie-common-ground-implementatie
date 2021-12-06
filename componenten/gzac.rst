@@ -23,7 +23,3 @@ Delen van deze processen kunnen volledig automatisch afgehandeld worden bijvoorb
 Meer informatie over GZAC/Valtimo staat op de valtimo `project site <https://docs.valtimo.nl/valtimo-core-concepts/about-valtimo>`_.
 
 Voor GZAC hebben we een groot aantal connectoren beschikbaar waarmee het kan koppelen met de common ground zgw componenten zoals OpenZaak, ProductAanvraag, ObjectApi en DocumentApi.
-
-
-
-
