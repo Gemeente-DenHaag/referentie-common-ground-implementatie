@@ -25,7 +25,12 @@ Het bouwblok aanmaken schrijft de generieke manier waarop een zaak aangemaakt mo
 Zet zaakstatus
 ---------------------
 
-Het bouwblok zet status beschrijft wat er moet gebeuren op het moment dat een klant-zaakstatus veranderd.
+Het bouwblok zetzaakstatus beschrijft wat er moet gebeuren op het moment dat een klant-zaakstatus veranderd.
+
+#. De zaakstatus wordt gezet in openzaak
+#. De documentapi krijgt een notificatie van de zaakstatus (bewaartermijnen kunnen daarvan afhankelijk zijn)
+#. Er wordt een klantcontact gemaakt met de melding dat de zaakstatus is veranderd
+#. Er gaat een notificatie naar de klant
 
 .. image:: /images/bpmn/zetzaakstatus.png
    :alt: zet zaakstatus bpmn
@@ -46,7 +51,10 @@ Gebruikerstaak
 Besluit
 ---------------------
 
-Besluit
+Het bouwblok besluit beschrijft de afhandeling op het moment dat een besluit genomen wordt in een proces. De volgende activiteiten vinden plaats.
+
+#. De zaakstatus wordt gezet in openzaak
+
 
 .. image:: /images/bpmn/besluit.png
    :alt: besluit bpmn model

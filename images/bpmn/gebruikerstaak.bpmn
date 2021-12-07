@@ -4,25 +4,7 @@
     <startEvent id="Event_0foh1cm">
       <outgoing>Flow_1j891x6</outgoing>
     </startEvent>
-    <task id="Activity_04juaba" name="maak klantcontact">
-      <incoming>Flow_0zrsxjz</incoming>
-      <outgoing>Flow_0nzwxfs</outgoing>
-      <dataOutputAssociation id="DataOutputAssociation_0cd5wps">
-        <targetRef>DataStoreReference_0jop5bh</targetRef>
-      </dataOutputAssociation>
-    </task>
     <sequenceFlow id="Flow_1j891x6" sourceRef="Event_0foh1cm" targetRef="Activity_07plshr" />
-    <task id="Activity_07plshr" name="maak gebruikerstaak">
-      <incoming>Flow_1j891x6</incoming>
-      <outgoing>Flow_0zrsxjz</outgoing>
-      <dataOutputAssociation id="DataOutputAssociation_1ga8967">
-        <targetRef>DataStoreReference_0xif3cz</targetRef>
-      </dataOutputAssociation>
-    </task>
-    <task id="Activity_12350by" name="verstuur notificatie">
-      <incoming>Flow_0nzwxfs</incoming>
-      <outgoing>Flow_0glonql</outgoing>
-    </task>
     <sequenceFlow id="Flow_0nzwxfs" sourceRef="Activity_04juaba" targetRef="Activity_12350by" />
     <sequenceFlow id="Flow_0glonql" sourceRef="Activity_12350by" targetRef="Event_1w8s0qh" />
     <endEvent id="Event_1w8s0qh">
@@ -31,6 +13,24 @@
     <sequenceFlow id="Flow_0zrsxjz" sourceRef="Activity_07plshr" targetRef="Activity_04juaba" />
     <dataStoreReference id="DataStoreReference_0xif3cz" name="gzac" />
     <dataStoreReference id="DataStoreReference_0jop5bh" name="klantapi" />
+    <serviceTask id="Activity_07plshr" name="maak gebruikerstaak">
+      <incoming>Flow_1j891x6</incoming>
+      <outgoing>Flow_0zrsxjz</outgoing>
+      <dataOutputAssociation id="DataOutputAssociation_1ga8967">
+        <targetRef>DataStoreReference_0xif3cz</targetRef>
+      </dataOutputAssociation>
+    </serviceTask>
+    <serviceTask id="Activity_04juaba" name="maak klantcontact">
+      <incoming>Flow_0zrsxjz</incoming>
+      <outgoing>Flow_0nzwxfs</outgoing>
+      <dataOutputAssociation id="DataOutputAssociation_0cd5wps">
+        <targetRef>DataStoreReference_0jop5bh</targetRef>
+      </dataOutputAssociation>
+    </serviceTask>
+    <serviceTask id="Activity_12350by" name="verstuur notificatie">
+      <incoming>Flow_0nzwxfs</incoming>
+      <outgoing>Flow_0glonql</outgoing>
+    </serviceTask>
   </process>
   <bpmndi:BPMNDiagram id="BpmnDiagram_1">
     <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Process_1">
@@ -53,15 +53,6 @@
       <bpmndi:BPMNShape id="Event_0foh1cm_di" bpmnElement="Event_0foh1cm">
         <omgdc:Bounds x="132" y="112" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_04juaba_di" bpmnElement="Activity_04juaba">
-        <omgdc:Bounds x="440" y="90" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_07plshr_di" bpmnElement="Activity_07plshr">
-        <omgdc:Bounds x="270" y="90" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_12350by_di" bpmnElement="Activity_12350by">
-        <omgdc:Bounds x="600" y="90" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1w8s0qh_di" bpmnElement="Event_1w8s0qh">
         <omgdc:Bounds x="752" y="112" width="36" height="36" />
       </bpmndi:BPMNShape>
@@ -76,6 +67,15 @@
         <bpmndi:BPMNLabel>
           <omgdc:Bounds x="471" y="302" width="38" height="14" />
         </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0t44htu_di" bpmnElement="Activity_07plshr">
+        <omgdc:Bounds x="270" y="90" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_13a8d0c_di" bpmnElement="Activity_04juaba">
+        <omgdc:Bounds x="440" y="90" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1gkrhbn_di" bpmnElement="Activity_12350by">
+        <omgdc:Bounds x="600" y="90" width="100" height="80" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="DataOutputAssociation_0cd5wps_di" bpmnElement="DataOutputAssociation_0cd5wps">
         <omgdi:waypoint x="490" y="170" />

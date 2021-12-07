@@ -4,47 +4,60 @@
     <startEvent id="Event_0foh1cm">
       <outgoing>Flow_1j891x6</outgoing>
     </startEvent>
-    <task id="Activity_04juaba" name="maak klantcontact">
-      <incoming>Flow_0zrsxjz</incoming>
-      <outgoing>Flow_0nzwxfs</outgoing>
-      <dataOutputAssociation id="DataOutputAssociation_1npb5dv">
-        <targetRef>DataStoreReference_08s2sze</targetRef>
-      </dataOutputAssociation>
-    </task>
     <sequenceFlow id="Flow_1j891x6" sourceRef="Event_0foh1cm" targetRef="Activity_07plshr" />
-    <task id="Activity_07plshr" name="zet zaakstatus">
-      <incoming>Flow_1j891x6</incoming>
-      <outgoing>Flow_0zrsxjz</outgoing>
-      <dataOutputAssociation id="DataOutputAssociation_00s529q">
-        <targetRef>DataStoreReference_05jz2kz</targetRef>
-      </dataOutputAssociation>
-    </task>
-    <task id="Activity_12350by" name="verstuur notificatie">
-      <incoming>Flow_0nzwxfs</incoming>
-      <outgoing>Flow_0glonql</outgoing>
-    </task>
     <sequenceFlow id="Flow_0nzwxfs" sourceRef="Activity_04juaba" targetRef="Activity_12350by" />
     <sequenceFlow id="Flow_0glonql" sourceRef="Activity_12350by" targetRef="Event_1w8s0qh" />
     <endEvent id="Event_1w8s0qh">
       <incoming>Flow_0glonql</incoming>
     </endEvent>
-    <sequenceFlow id="Flow_0zrsxjz" sourceRef="Activity_07plshr" targetRef="Activity_04juaba" />
+    <sequenceFlow id="Flow_0zrsxjz" sourceRef="Activity_07plshr" targetRef="Activity_1jaxlxp" />
     <dataStoreReference id="DataStoreReference_05jz2kz" name="OpenZaak" />
     <dataStoreReference id="DataStoreReference_08s2sze" name="KlantApi" />
+    <sequenceFlow id="Flow_0fve3cr" sourceRef="Activity_1jaxlxp" targetRef="Activity_04juaba" />
+    <dataStoreReference id="DataStoreReference_0s3mjm1" name="documentApi" />
+    <serviceTask id="Activity_07plshr" name="zet zaakstatus">
+      <incoming>Flow_1j891x6</incoming>
+      <outgoing>Flow_0zrsxjz</outgoing>
+      <dataOutputAssociation id="DataOutputAssociation_00s529q">
+        <targetRef>DataStoreReference_05jz2kz</targetRef>
+      </dataOutputAssociation>
+    </serviceTask>
+    <serviceTask id="Activity_1jaxlxp" name="notificeer documentapi over verandering zaakstatus">
+      <incoming>Flow_0zrsxjz</incoming>
+      <outgoing>Flow_0fve3cr</outgoing>
+      <dataOutputAssociation id="DataOutputAssociation_1y5ymja">
+        <targetRef>DataStoreReference_0s3mjm1</targetRef>
+      </dataOutputAssociation>
+    </serviceTask>
+    <serviceTask id="Activity_04juaba" name="maak klantcontact">
+      <incoming>Flow_0fve3cr</incoming>
+      <outgoing>Flow_0nzwxfs</outgoing>
+      <dataOutputAssociation id="DataOutputAssociation_1npb5dv">
+        <targetRef>DataStoreReference_08s2sze</targetRef>
+      </dataOutputAssociation>
+    </serviceTask>
+    <serviceTask id="Activity_12350by" name="verstuur notificatie">
+      <incoming>Flow_0nzwxfs</incoming>
+      <outgoing>Flow_0glonql</outgoing>
+    </serviceTask>
   </process>
   <bpmndi:BPMNDiagram id="BpmnDiagram_1">
     <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNEdge id="Flow_0fve3cr_di" bpmnElement="Flow_0fve3cr">
+        <omgdi:waypoint x="510" y="130" />
+        <omgdi:waypoint x="570" y="130" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0zrsxjz_di" bpmnElement="Flow_0zrsxjz">
         <omgdi:waypoint x="370" y="130" />
-        <omgdi:waypoint x="440" y="130" />
+        <omgdi:waypoint x="410" y="130" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0glonql_di" bpmnElement="Flow_0glonql">
-        <omgdi:waypoint x="700" y="130" />
-        <omgdi:waypoint x="752" y="130" />
+        <omgdi:waypoint x="830" y="130" />
+        <omgdi:waypoint x="872" y="130" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0nzwxfs_di" bpmnElement="Flow_0nzwxfs">
-        <omgdi:waypoint x="540" y="130" />
-        <omgdi:waypoint x="600" y="130" />
+        <omgdi:waypoint x="670" y="130" />
+        <omgdi:waypoint x="730" y="130" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_1j891x6_di" bpmnElement="Flow_1j891x6">
         <omgdi:waypoint x="168" y="130" />
@@ -53,17 +66,8 @@
       <bpmndi:BPMNShape id="Event_0foh1cm_di" bpmnElement="Event_0foh1cm">
         <omgdc:Bounds x="132" y="112" width="36" height="36" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_04juaba_di" bpmnElement="Activity_04juaba">
-        <omgdc:Bounds x="440" y="90" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_07plshr_di" bpmnElement="Activity_07plshr">
-        <omgdc:Bounds x="270" y="90" width="100" height="80" />
-      </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Activity_12350by_di" bpmnElement="Activity_12350by">
-        <omgdc:Bounds x="600" y="90" width="100" height="80" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Event_1w8s0qh_di" bpmnElement="Event_1w8s0qh">
-        <omgdc:Bounds x="752" y="112" width="36" height="36" />
+        <omgdc:Bounds x="872" y="112" width="36" height="36" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataStoreReference_05jz2kz_di" bpmnElement="DataStoreReference_05jz2kz">
         <omgdc:Bounds x="295" y="235" width="50" height="50" />
@@ -72,18 +76,40 @@
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="DataStoreReference_08s2sze_di" bpmnElement="DataStoreReference_08s2sze">
-        <omgdc:Bounds x="465" y="235" width="50" height="50" />
+        <omgdc:Bounds x="595" y="235" width="50" height="50" />
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds x="470" y="292" width="41" height="14" />
+          <omgdc:Bounds x="600" y="292" width="41" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataStoreReference_0s3mjm1_di" bpmnElement="DataStoreReference_0s3mjm1">
+        <omgdc:Bounds x="435" y="235" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="428" y="292" width="65" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0sibrxf_di" bpmnElement="Activity_07plshr">
+        <omgdc:Bounds x="270" y="90" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_08ijknk_di" bpmnElement="Activity_1jaxlxp">
+        <omgdc:Bounds x="410" y="90" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ygzpfk_di" bpmnElement="Activity_04juaba">
+        <omgdc:Bounds x="570" y="90" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1tp09ye_di" bpmnElement="Activity_12350by">
+        <omgdc:Bounds x="730" y="90" width="100" height="80" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="DataOutputAssociation_1npb5dv_di" bpmnElement="DataOutputAssociation_1npb5dv">
-        <omgdi:waypoint x="492" y="170" />
-        <omgdi:waypoint x="494" y="235" />
+        <omgdi:waypoint x="621" y="170" />
+        <omgdi:waypoint x="620" y="235" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataOutputAssociation_00s529q_di" bpmnElement="DataOutputAssociation_00s529q">
         <omgdi:waypoint x="320" y="170" />
         <omgdi:waypoint x="320" y="235" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="DataOutputAssociation_1y5ymja_di" bpmnElement="DataOutputAssociation_1y5ymja">
+        <omgdi:waypoint x="462" y="170" />
+        <omgdi:waypoint x="464" y="235" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
