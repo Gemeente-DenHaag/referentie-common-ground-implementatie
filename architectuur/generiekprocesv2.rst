@@ -8,25 +8,13 @@ Generiek proces
    :maxdepth: 2
 
 
-Het generieke proces is een blueprint voor alle processen binnen de gemeente. Het generieke proces omschrijft de context waarin die processen worden uitgevoerd, en alle mogelijke statussen zoals een zaak die in de communicatie naar buiten kan hebben.
-
----------------------
-Zaak statussen
----------------------
-
-#. Ontvangen
-#. In behandeling
-#. Status 3
-#. Status 4
-#. Status 5
-#. Enzovoorts
-#. Afgerond
+Het generieke proces is een blauwdruk voor alle processen binnen de gemeente. Als de manier waarop een zaak is ingericht voldoet aan de blauwdruk dan kan het proces afgehandeld worden met de gestandaardiseerde componenten.
 
 ---------------------
 Aanmaken zaak
 ---------------------
 
-Het bouwblok aanmaken schrijft de generieke manier waarop een zaak aangemaakt moet worden. Elke zaak wordt altijd op dezelfde wijze aangemaakt. 
+Het bouwblok aanmaken schrijft de generieke manier waarop een zaak aangemaakt moet worden. Elke zaak wordt altijd op dezelfde wijze aangemaakt. Dit zorgt ervoor dat de gegevens in alle ZGW api's op de juiste manier met de juiste samenhang zijn vastgelegd.
 
 
 .. image:: /images/bpmn/aanmakenzaak.png
