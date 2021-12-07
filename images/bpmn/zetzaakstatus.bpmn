@@ -19,7 +19,7 @@
         <targetRef>DataStoreReference_05jz2kz</targetRef>
       </dataOutputAssociation>
     </task>
-    <task id="Activity_12350by" name="verstuur email">
+    <task id="Activity_12350by" name="verstuur notificatie">
       <incoming>Flow_0nzwxfs</incoming>
       <outgoing>Flow_0glonql</outgoing>
     </task>
