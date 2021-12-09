@@ -1,0 +1,35 @@
+title Taken API
+participant PWA
+participant BFF
+participant Taken API
+participant Open Formulieren
+participant Open Notificaties
+participant GZAC
+participant ZaakDetails
+Taken API<-GZAC:Taak aanmaken
+Taken API-->GZAC:Taak ID
+parallel 
+BFF->Taken API:Geef taken
+PWA->BFF:Geef taken
+parallel off
+parallel 
+BFF<--Taken API:Taak + Form ID
+PWA<--BFF:Taak + Form ID
+parallel off
+parallel 
+PWA->BFF:Geef formulier voor taak
+BFF->Open Formulieren:Geef formulier voor taak
+parallel off
+Open Formulieren->ZaakDetails:Haal pre-fill data op
+Open Formulieren<--ZaakDetails:Data
+parallel 
+BFF<--Open Formulieren:Formulier
+PWA<--BFF:Formulier
+parallel off
+PWA->Open Formulieren:Submit formulier
+Taken API<-Open Formulieren:Opslaan formulier data + status
+Taken API->Open Notificaties:Stuur notificatie
+Open Notificaties->GZAC:Stuur notificatie
+Taken API<-GZAC:Haal taak informatie (ZaakDetails) op
+GZAC->GZAC:Verwerk afronding taak
+GZAC->ZaakDetails:Werk Zaakdetails bij
