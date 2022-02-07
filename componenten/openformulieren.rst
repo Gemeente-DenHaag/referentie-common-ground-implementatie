@@ -7,7 +7,7 @@ Open Formulieren
 
 
 
-`Open Formulieren <https://github.com/open-formulieren/open-forms>`_ is een applicatie waarme beheerders snel slimme formulieren kunnen configureren. Deze formulieren worden geprefilled door slimme koppelingen met bijvoorbeeld HaalCentraal. Open Formulieren is een laag bovenop `Forms.io <https://forms.io>`_
+`Open Formulieren <https://github.com/open-formulieren/open-forms>`_ is een applicatie waarme beheerders snel slimme formulieren kunnen configureren. Deze formulieren worden geprefilled door slimme koppelingen met bijvoorbeeld HaalCentraal. Open Formulieren is een laag bovenop `Form.io <https://form.io>`_
 
 Den Haag heeft gekozen voor Open Formulieren omdat:
 
