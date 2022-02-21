@@ -11,14 +11,14 @@ Git Flow Den Haag
 Bij de ontwikkeling en deployment van onze refenrtie architecuur volgen wij de branching strategie `Git Flow <https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow>`_ Een volledige uitleg is te vinden op de uitlegpagina van `Atlassian <https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow>`_ 
 Hieronder een korte uitleg van onze toepassing
 
-Schematisch ziet git flow er als hieronder uitgerold
+Schematisch ziet git flow er als hieronder uit
 
 
 .. figure:: /images/gitflow1.svg
    :alt: Productaanvraag cvs
    :width: 600
 
-   Branching strategie
+   Branching strategie (bron:atlassian)
 
 
 Qua deployment matchen branches met omgevingen volgens onderstaande overzicht:
