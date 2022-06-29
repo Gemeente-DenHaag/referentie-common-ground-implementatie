@@ -15,8 +15,8 @@ Den Haag heeft gekozen voor Open Formulieren omdat:
 * De opzet & architectuur aansluiten bij onze visie
 * Het Open Source en modulair is en gebouwde componenten dus voor andere gemeentes herbruikbaar zijn
 
-In Open Formulieren kunnen formulieren zelfstandig geserveerd worden of via de SDK ontsloten worden op andere platformen. Den Haag heeft gekozen om de formulieren te ontsluiten via de SDK zodat wij het :ref:`designsystem` kunnen toepassen. 
-  
+De frontend van OpenFormulieren is het `NL design system <https://designsystem.gebruikercentraal.nl/>`_, dat vervolgens met designtokens in de juiste huisstijl gestyled wordt.
+
 Ingestuurde formulieren worden vervolgens opgepakt door het Generieke Zaak Afhandel Component, op de juiste manier in de ZGW api's geregisteerd en kunnen direct door medewerkers behandeld worden. Uiteraard zijn alle zaken van een aanvrager ook direct zichtbaar in de Portal. 
 
 Op het :ref:`architectuur` onderdeel van deze site staat de :ref:`productaanvraag` in detail uitgewerkt.
