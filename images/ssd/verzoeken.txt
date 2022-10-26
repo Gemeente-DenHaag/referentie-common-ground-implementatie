@@ -1,0 +1,22 @@
+title ProductAanvraag/Verzoeken patroon
+
+actor User
+participant Openformulieren
+participant Verzoeken ObjectApi
+participant NotificatieApi
+participant ZaakAfhandelSystem
+participant OpenZaak
+
+ZaakAfhandelSystem->NotificatieApi:createSubscriptionForProductAanvraag(type)
+activate Openformulieren
+User->Openformulieren:Ingevuld Formulier(type,values)
+Openformulieren->Verzoeken ObjectApi:create verzoek(type,values)
+deactivate Openformulieren
+
+Verzoeken ObjectApi->NotificatieApi:eventobjectcreated(type,uuid)
+activate ZaakAfhandelSystem
+NotificatieApi->ZaakAfhandelSystem:eventobjectcreated(type,uuid)
+ZaakAfhandelSystem->Verzoeken ObjectApi:getObject(uuid)
+Verzoeken ObjectApi-->ZaakAfhandelSystem:object
+ZaakAfhandelSystem->OpenZaak:createZaak()
+ZaakAfhandelSystem->Verzoeken ObjectApi:deleteObject(uuid)
