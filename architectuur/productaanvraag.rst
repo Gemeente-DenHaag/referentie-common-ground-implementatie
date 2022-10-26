@@ -2,7 +2,7 @@
 
 
 ##################
-Product Aanvraag
+Verzoeken
 ##################
 
 .. toctree::
@@ -10,12 +10,8 @@ Product Aanvraag
 
 Hieronder staat het productaanvraag / verzoek patroon uitgewerkt
 
-*********
-1. Verzoek
-*********
 
-.. image:: /images/yed/productaanvraag.png
-   :alt: Schematische weergave van een verzoek
+
 
 
 #. Een aanvraag begint altijd met een gebruiker die een formulier invult. Dit kan zowel een burger zijn die in de portal een formulier invult als een medewerker die in de zaakafhandelapplicatie een zaak aanmaakt.
@@ -29,6 +25,8 @@ Hieronder staat het productaanvraag / verzoek patroon uitgewerkt
 #. En plaatst eventuele zaakdetails in de objectApi
 #. En verwijderd het verzoekobject uit de objectApi
 
+.. image:: /images/yed/productaanvraag.png
+   :alt: Schematische weergave van een verzoek
 
 .. image:: /images/ssd/verzoeken.png
    :alt: SequenceDiagram
