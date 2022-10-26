@@ -9,7 +9,7 @@
             label = "Gebruiker";
             "Gebruiker" -> "Formulier";
             "Formulier" -> "FormulierenApi";
-            "FormulierenApi" -> "ObjectApi"[label="ProductAanvraag"];
+            "FormulierenApi" -> "ObjectApi"[label="Verzoek"];
         }
         subgraph cluster_1 {
             label = "Proces";
