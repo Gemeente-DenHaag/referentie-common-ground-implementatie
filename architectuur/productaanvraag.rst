@@ -32,3 +32,4 @@ Hieronder staat het productaanvraag / verzoek patroon uitgewerkt
    :alt: SequenceDiagram
 
 
+De mapping tussen de systemen vind plaats op ObjectType. In OpenFormulieren wordt in het aanvraagdformulier vastgelegd als welk objecttype de aanvraag geregistreerd moet worden in de objecten api. In het zaakafhandelsysteem worden notificaties op het aanmaken van objecten met dit objecttype geconfigureerd als trigger om een nieuwe zaak te starten.
